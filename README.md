@@ -1,6 +1,6 @@
 # And_Shop_E-commerce_App_Final_Version:
 
-// Preview_Link: (Comming Soon)
+// Preview_Link: (https://youtu.be/N70zLvOkDuk)
 
 // E-commerce Store using all CRUD operations:
 
