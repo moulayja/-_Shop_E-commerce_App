@@ -1,11 +1,61 @@
-# And_Shop_E-commerce_App_Final_Version:
+# & Shop E-commerce App:
 
-// Preview_Link: { https://youtu.be/N70zLvOkDuk }
+E-commerce store 
 
-// E-commerce Store using all CRUD operations:
+## Table of Contents
 
-+ Built a dynamic & responsive Front-end using ReactJS with Bootstrap and CSS
-+ Used Rails with PostgreSQL as a backend API 
-+ Managed global state through props
-+ Built custom login authentication & authorisation with a use of JWT
+- [App Preview](#app-preview)
+- [Collaborators](#collaborators)
+- [Project Description](#project-description)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+
+#### Project Status: [Completed]
+Final Version
+
+## App Preview
+[For a full demo, click here](https://youtu.be/N70zLvOkDuk)
+
+## Collaborators
+| Name | Github Page |
+| --- | --- |
+| Jamal Farah | [Profile Page](https://github.com/moulayja) |
+
+
+## Project Description
+#### Overview:
+
+The idea is to create a magazine app with categories, the visiting user can leave comments without removing or editing.
+
+The author has full access to remove written comments, he can also Create, Read, Update and Delete (CRUD).
+
+You can also Sign Up as an author to start writing articles and post them.
+#### Challenges:
+ Using SQLite made a bit of an issue, I have to rake instead of using rails, but I overcome that to create my final version successfully.
+
+
+## Technologies
+- Dynamic & responsive Front-end using ReactJS
+- Bootstrap and CSS
+- Rails API for the Back-end
+- PostgreSQL as a backend Database-API
+- RESTful architecture for CRUD actions
+- Managed global state through props
+- Custom login authentication & authorization with use of JWT
+
+## Getting Started
+1. Clone this repo
+2. Cd to the project file
+   ```bash
+      $rake db:reset && rails s -p 3000
+   ```
+3. in your browser open
+
+   ```bash
+      http://localhost:3000/
+   ```
+4. Now you can Sign up to post articles
+
+5. Keep posting and editing by Sign in
+
 
