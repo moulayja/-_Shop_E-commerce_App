@@ -25,13 +25,17 @@ Final Version
 ## Project Description
 #### Overview:
 
-The idea is to create a magazine app with categories, the visiting user can leave comments without removing or editing.
+The idea is to create a responsive E-commerce app that allows the Admin to have full access to the CRUD
 
-The author has full access to remove written comments, he can also Create, Read, Update and Delete (CRUD).
+At the footer, I used an SVG managed by the state to change the colors between, Create(Pink-color), Read (Pink-color), Update(Green-color), Delete(Red-color).
 
-You can also Sign Up as an author to start writing articles and post them.
+The website can go from darker to lighter themes by pressing the Plugin Logo.
+
+The user can add a product to his cart once, while he can add more once he is inside the cart component  
+
+You can also Sign Up, Sign In simply.
 #### Challenges:
- Using SQLite made a bit of an issue, I have to rake instead of using rails, but I overcome that to create my final version successfully.
+Passing functions and states through props can be daunting, I wanted to use React Hooks with Context at certain points, but I learnt a lot this way.
 
 
 ## Technologies
@@ -45,17 +49,21 @@ You can also Sign Up as an author to start writing articles and post them.
 
 ## Getting Started
 1. Clone this repo
-2. Cd to the project file
+2. Cd to the project file 'back_end' 
    ```bash
-      $rake db:reset && rails s -p 3000
+      $rails db:reset && rails s -p 3007
    ```
-3. in your browser open
+3. Open another CMD terminal, cd to the project file 'front_end' 
 
+   ```bash
+      $sudo npm install && npm start
+   ```
+4. The server will open a new window under the localhost at port 3000
    ```bash
       http://localhost:3000/
    ```
-4. Now you can Sign up to post articles
 
-5. Keep posting and editing by Sign in
+
+5. Keep navigating the store
 
 
