@@ -2,6 +2,12 @@
 
 E-commerce store 
 
+ [![jamalino](https://img.shields.io/badge/Project%20Status-Completed-brightgreen?style=for-the-badge&logo=appveyor
+)](https://github.com/moulayja/)
+
+[![jamalino](https://img.shields.io/badge/Completion-100%25-blue)](https://github.com/moulayja/And_Shop_E-commerce_App)
+
+
 ## Table of Contents
 
 - [App Preview](#app-preview)
@@ -9,9 +15,6 @@ E-commerce store
 - [Project Description](#project-description)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-
-#### Project Status: [Completed]
-Final Version
 
 ## App Preview
 [For a full demo, click here](https://youtu.be/N70zLvOkDuk)
