@@ -40,13 +40,13 @@ class App extends React.Component {
             var link = `http://13.58.204.144:3000`
 
         componentDidMount(){
-                fetch(`link/products`)
+                fetch(`${link}/products`)
                     .then(r => r.json())
                     .then(data => { this.setState({ products: data, displayProducts: data }) })         
         }
 
         makeNewProduct = (newProduct) => {
-                fetch(`link/products`, 
+                fetch(`${link}/products`, 
                 {
                 method: 'POST',
                 headers: {
@@ -87,7 +87,7 @@ class App extends React.Component {
 
 
         updateProduct = (product)=>{
-          fetch(`link/products/${product.id}`, {
+          fetch(`${link}/products/${product.id}`, {
                    method: 'PATCH',
                    headers: {
                            'content-type': 'application/json'
