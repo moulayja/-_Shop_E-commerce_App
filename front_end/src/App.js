@@ -71,7 +71,7 @@ class App extends React.Component {
         }
 
         deleteProduct =(id)=>{
-                fetch(`http://localhost:3007/products/${id}`, {
+                fetch(`http://13.58.204.144:3000/products/${id}`, {
                   method: 'DELETE',
                   headers: {
                     'content-type': 'application/json'
@@ -85,7 +85,7 @@ class App extends React.Component {
 
 
         updateProduct = (product)=>{
-          fetch(`http://localhost:3007/products/${product.id}`, {
+          fetch(`http://13.58.204.144:3000/products/${product.id}`, {
                    method: 'PATCH',
                    headers: {
                            'content-type': 'application/json'
