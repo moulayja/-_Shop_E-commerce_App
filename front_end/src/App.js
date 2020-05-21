@@ -38,13 +38,13 @@ class App extends React.Component {
         }
 
         componentDidMount(){
-                fetch(`http://localhost:3007/products`)
+                fetch(`http://13.58.204.144:3000/products`)
                     .then(r => r.json())
                     .then(data => { this.setState({ products: data, displayProducts: data }) })         
         }
 
         makeNewProduct = (newProduct) => {
-                fetch(`http://localhost:3007/products`, 
+                fetch(`http://13.58.204.144:3000//products`, 
                 {
                 method: 'POST',
                 headers: {
