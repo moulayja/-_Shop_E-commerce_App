@@ -40,16 +40,16 @@ class App extends React.Component {
 
 
         componentDidMount(){
-                const url = "http://13.58.204.144:3000"
+                const url = "http://13.58.204.144:3001"
 
-                fetch(`${url}/products`)
+                fetch(`http://13.58.204.144:3001/products`)
                     .then(r => r.json())
                     .then(data => { this.setState({ products: data, displayProducts: data }) })         
         }
 
         makeNewProduct = (newProduct) => {
                 const url = "http://13.58.204.144:3000"
-                fetch(`${url}/products`, 
+                fetch(`http://13.58.204.144:3001/products`, 
                 {
                 method: 'POST',
                 headers: {
@@ -78,7 +78,7 @@ class App extends React.Component {
         deleteProduct =(id)=>{
                 const url = "http://13.58.204.144:3000"
 
-                fetch(`${url}/products/${id}`, {
+                fetch(`http://13.58.204.144:3001/products/${id}`, {
                   method: 'DELETE',
                   headers: {
                     'content-type': 'application/json'
@@ -94,7 +94,7 @@ class App extends React.Component {
         updateProduct = (product)=>{
                 const url = "http://13.58.204.144:3000"
 
-          fetch(`${url}/products/${product.id}`, {
+          fetch(`http://13.58.204.144:3001/products/${product.id}`, {
                    method: 'PATCH',
                    headers: {
                            'content-type': 'application/json'
