@@ -19,7 +19,6 @@ import AdminDeleteProducts from './components/Main/AdminDeleteProducts';
 import AdminUpdatePro from './components/Main/AdminUpdatePro';
 
 class App extends React.Component {
-        const link = "http://13.58.204.144:3001"
 
         state = { user:{},
                   products: [],
@@ -39,14 +38,18 @@ class App extends React.Component {
         }
 
 
+
         componentDidMount(){
-                fetch(`${link}/products`)
+                const url = "http://13.58.204.144:3000"
+
+                fetch(`${url}/products`)
                     .then(r => r.json())
                     .then(data => { this.setState({ products: data, displayProducts: data }) })         
         }
 
         makeNewProduct = (newProduct) => {
-                fetch(`${link}/products`, 
+                const url = "http://13.58.204.144:3000"
+                fetch(`${url}/products`, 
                 {
                 method: 'POST',
                 headers: {
@@ -73,7 +76,9 @@ class App extends React.Component {
         }
 
         deleteProduct =(id)=>{
-                fetch(`link/products/${id}`, {
+                const url = "http://13.58.204.144:3000"
+
+                fetch(`${url}/products/${id}`, {
                   method: 'DELETE',
                   headers: {
                     'content-type': 'application/json'
@@ -87,7 +92,9 @@ class App extends React.Component {
 
 
         updateProduct = (product)=>{
-          fetch(`${link}/products/${product.id}`, {
+                const url = "http://13.58.204.144:3000"
+
+          fetch(`${url}/products/${product.id}`, {
                    method: 'PATCH',
                    headers: {
                            'content-type': 'application/json'
