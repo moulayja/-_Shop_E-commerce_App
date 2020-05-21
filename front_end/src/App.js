@@ -37,14 +37,16 @@ class App extends React.Component {
                 localStorage.user = user.username
         }
 
+            var link = `http://13.58.204.144:3000`
+
         componentDidMount(){
-                fetch(`http://13.58.204.144:3000/products`)
+                fetch(`link/products`)
                     .then(r => r.json())
                     .then(data => { this.setState({ products: data, displayProducts: data }) })         
         }
 
         makeNewProduct = (newProduct) => {
-                fetch(`http://13.58.204.144:3000//products`, 
+                fetch(`link/products`, 
                 {
                 method: 'POST',
                 headers: {
@@ -71,7 +73,7 @@ class App extends React.Component {
         }
 
         deleteProduct =(id)=>{
-                fetch(`http://13.58.204.144:3000/products/${id}`, {
+                fetch(`link/products/${id}`, {
                   method: 'DELETE',
                   headers: {
                     'content-type': 'application/json'
@@ -85,7 +87,7 @@ class App extends React.Component {
 
 
         updateProduct = (product)=>{
-          fetch(`http://13.58.204.144:3000/products/${product.id}`, {
+          fetch(`link/products/${product.id}`, {
                    method: 'PATCH',
                    headers: {
                            'content-type': 'application/json'
