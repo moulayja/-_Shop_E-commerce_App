@@ -19,7 +19,7 @@ export default class SignIn extends Component {
     handleSubmit = event =>{
         event.preventDefault();
         console.log(this.state);
-        fetch(`http://localhost:3007/users/login`,{
+        fetch(`http://13.58.204.144:3000/users/login`,{
             method: 'POST',
             headers: {
                 "Authorization": "token_go",
