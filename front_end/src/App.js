@@ -19,6 +19,7 @@ import AdminDeleteProducts from './components/Main/AdminDeleteProducts';
 import AdminUpdatePro from './components/Main/AdminUpdatePro';
 
 class App extends React.Component {
+        const link = "http://13.58.204.144:3000"
 
         state = { user:{},
                   products: [],
@@ -37,7 +38,6 @@ class App extends React.Component {
                 localStorage.user = user.username
         }
 
-            var link = `http://13.58.204.144:3000`
 
         componentDidMount(){
                 fetch(`${link}/products`)
