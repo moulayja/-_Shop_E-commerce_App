@@ -17,7 +17,7 @@ E-commerce store
 - [Getting Started](#getting-started)
 
 ## App Preview
-[For a full demo, click here](https://youtu.be/N70zLvOkDuk)
+[For a full demo, click here](http://andshop-app.herokuapp.com/home)
 
 ## Collaborators
 | Name | Github Page |
